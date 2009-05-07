@@ -17,4 +17,6 @@ requires 'namespace::clean';
 
 build_requires 'Test::More';
 
+auto_provides;
+auto_install;
 WriteAll;
