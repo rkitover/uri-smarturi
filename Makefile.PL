@@ -19,4 +19,8 @@ build_requires 'Test::More';
 
 auto_provides;
 auto_install;
+
+resources repository =>
+    'git://github.com/rkitover/uri-smarturi.git';
+
 WriteAll;
