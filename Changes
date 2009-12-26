@@ -1,5 +1,8 @@
 Revision history for URI-SmartURI
 
+0.030  2009-12-26 15:50:29
+    - fix some failing tests (copied from URI t/)
+
 0.029  2009-04-29 17:20:08
     - fucked up, previous dist was missing inc/
 

@@ -1,4 +1,4 @@
-use inc::Module::Install;
+use inc::Module::Install 0.91;
 
 name     'URI-SmartURI';
 all_from 'lib/URI/SmartURI.pm';
@@ -6,7 +6,7 @@ author   'Rafael Kitover <rkitover@cpan.org>';
 
 perl_version '5.008001';
 
-requires 'URI';
+requires 'URI' => '1.51';
 requires 'Class::C3::Componentised';
 requires 'File::Find::Rule';
 requires 'List::Util';
