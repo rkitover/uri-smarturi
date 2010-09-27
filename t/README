@@ -1,4 +1,0 @@
-These are all stolen from the URI test suite.
-I just did a perl -pi -e 's/URI(::)?/Catalyst::SmartURI$1/g' *.t *.pl
-And some other minor changes.
-Left out urn-isbn.t, which is incompatible with the latest Business::ISBN.
