@@ -15,7 +15,9 @@ requires 'Scalar::Util';
 requires 'Moose';
 requires 'namespace::clean';
 
-build_requires 'Test::More';
+build_requires 'Test::More', '0.94';;
+build_requires 'Test::NoWarnings';
+build_requires 'Test::Fatal';
 
 auto_provides;
 auto_install;

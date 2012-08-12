@@ -254,6 +254,10 @@ sub can { # of PORK BRAINS in MILK GRAVY, yum!!!
     use vars qw/$CAN $AUTOLOAD/;
     my ($self, $method) = @_;
 
+    if ($method eq 'can') {
+        return \&can;
+    }
+
     my $existing = eval { $self->next::method($method) };
     undef $@;
     return $existing if $existing;

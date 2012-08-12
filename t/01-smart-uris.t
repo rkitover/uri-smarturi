@@ -2,7 +2,9 @@
 
 use strict;
 use warnings;
-use Test::More tests => 8;
+use Test::More tests => 10 + 1;
+use Test::NoWarnings;
+use Test::Fatal 'exception';
 
 use URI::SmartURI;
 use URI;
@@ -28,5 +30,12 @@ is(
     'http://www.catalystframework.org/calendar',
     'sticky reference URI'
 );
+
+my $exception = exception {
+    is $uri->can('can'), \&URI::SmartURI::can,
+        '->can resolves itself';
+};
+
+is $exception, undef, '->can resolves itself without dying';
 
 # vim: expandtab shiftwidth=4 ts=4 tw=80:

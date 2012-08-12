@@ -1,5 +1,7 @@
 Revision history for URI-SmartURI
 
+    - fix $uri->can('can')
+
 0.031  2010-09-27 09:46:24
     - removed most tests, they were causing odd failures on cpantesters
 
